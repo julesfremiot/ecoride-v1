@@ -2,15 +2,17 @@ import { useState } from "react"
 
 export default function NavBar(){
 
-    const [mobileMenu, openMenu] = useState(true);
+    const [mobileMenu, openMenu] = useState(false);
 
     return (
+        <>
         <nav className="h-20 w-screen fixed top-0 shadow-lg flex items-center justify-between lg:px-20 md:px-5">
             <div className="flex px-10 w-screen items-center justify-between md:hidden">
                 <div>
                 <span>Logo</span>
                 </div>
-                <i onClick={() => {openMenu(prevState => !prevState)}} className={mobileMenu ? "bi bi-list text-skyBlue font-bold text-xl rounded px-1 block" : "bi bi-x text-skyBlue font-bold text-xl rounded px-1 block"}></i>
+                <i onClick={() => {openMenu(prevState => !prevState)}} className={mobileMenu ? "bi bi-list  text-skyBlue font-bold text-3xl rounded px-1 block" : "bi bi-x text-skyBlue font-bold text-4xl rounded px-1 block"}></i>
+
             </div>
             <div className="menu-wrapper hidden md:block">
                 <div className="logo inline lg:mr-20 md:mr-5">Logo</div>
@@ -34,5 +36,29 @@ export default function NavBar(){
                 </span>
             </div>
         </nav>
+        <div>
+         {!mobileMenu? 
+            <div className="w-screen mt-20 md:hidden">
+                <ul className="w-screen text-center">
+                    <li className="bg-white pt-4 pb-3 font-medium text-skyBlue border-b-2">Acceuil</li>
+                    <li className="bg-white pt-4 pb-3 font-medium text-skyBlue border-b-2">Covoiturages</li>
+                    <li className="bg-white pt-4 pb-3 font-medium text-skyBlue border-b-2">Contact</li>
+                    <li className="bg-skyBlue p-4 font-medium text-white border-b-2 hover:bg-indigo-800">
+                        <i className="bi bi-search text-white text-xl mr-3"></i>
+                        Rechercher
+                    </li>
+                    <li className="bg-skyBlue p-4 font-medium text-white border-b-2 hover:bg-indigo-800">
+                        <i className="bi bi-plus-circle-fill text-white text-xl mr-3"></i>
+                        Ajouter trajet
+                    </li>
+                    <li className="bg-skyBlue p-4 font-medium text-white border-b-2 hover:bg-indigo-800">
+                        <i className="bi bi-person-fill text-white text-xl mr-3"></i>
+                        Connexion
+                    </li>
+                </ul>
+            </div> 
+            : <></>}
+        </div>
+    </>
     )
 }
