@@ -7,3 +7,8 @@
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
 }
+
+html, body {
+  height: 100%;
+  overflow: auto;
+}
