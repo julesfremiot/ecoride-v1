@@ -46,7 +46,7 @@ export default function NavBar(){
             </div>
         </nav>
         <>
-            <div className={!mobileMenu ? "z-10 fixed top-20 md:hidden transition-all duration-600 overflow-hidden origin-top" : "z-10 fixed top-20 max-h-0 w-screen md:hidden transition-all duration-600 overflow-hidden origin-top"}>
+            <div className={!mobileMenu ? "z-10 fixed height-full top-20 md:hidden transition-all duration-600 overflow-scroll origin-top" : "z-10 fixed top-20 max-h-0 w-screen md:hidden transition-all duration-600 overflow-scroll origin-top"}>
                 <div className="px-5 w-screen h-screen bg-white">
                     <ul className="text-center">
                         <li className="bg-white pt-4 pb-3 font-medium text-skyBlue border-b-2">Acceuil</li>
