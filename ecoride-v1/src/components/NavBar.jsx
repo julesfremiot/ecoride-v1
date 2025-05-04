@@ -1,4 +1,5 @@
 import { useState } from "react"
+import "../componentscss/navbar.css";
 
 export default function NavBar(){
 
@@ -6,7 +7,7 @@ export default function NavBar(){
 
     return (
         <>
-        <nav className="h-20 w-screen fixed top-0 shadow-lg flex items-center justify-between lg:px-20 md:px-5">
+        <nav className="h-20 w-screen fixed top-0 shadow-lg flex items-center justify-between lg:px-20 md:px-5 bg-white">
             <div className="flex px-10 w-screen items-center justify-between md:hidden">
                 <div>
                 <span>Logo</span>
@@ -17,28 +18,28 @@ export default function NavBar(){
             <div className="menu-wrapper hidden md:block">
                 <div className="logo inline lg:mr-20 md:mr-5">Logo</div>
                 <ul className="inline">
-                <li className="inline-block mr-7 p-2 text-skyBlue hover:text-oceanBlue font-semibold">Acceuil</li>
-                    <li className="inline-block mr-7 p-2 text-skyBlue hover:text-oceanBlue font-semibold">Covoiturages</li>
-                    <li className="inline-block mr-7 p-2 text-skyBlue hover:text-oceanBlue font-semibold">Contact</li>
+                <li className="inline-block mr-7 p-2 text-skyBlue hover:text-indigo-800 font-semibold">Acceuil</li>
+                    <li className="inline-block mr-7 p-2 text-skyBlue hover:text-indigo-800 font-semibold">Covoiturages</li>
+                    <li className="inline-block mr-7 p-2 text-skyBlue hover:text-indigo-800 font-semibold">Contact</li>
                 </ul>
             </div>
             <div className="action-wrapper hidden md:flex items-center justify-evenly">
-                <span className="text-skyBlue font-semibold hover:text-oceanBlue md:mr-3 lg:mr-10">
-                <i className="text-2xl bi bi-search text-skyBlue md:mr-2 lg:mr-4"></i>
-                Rechercher
+                <span className="font-semibold md:mr-3 lg:mr-10 group">
+                <i className="text-2xl bi bi-search text-skyBlue md:mr-2 lg:mr-4 group-hover:text-indigo-800"></i>
+                <span className="text-skyBlue group-hover:text-indigo-800">Rechercher</span>
                 </span>
-                <span className="text-skyBlue font-semibold hover:text-oceanBlue md:mr-3 lg:mr-10">
-                <i className="text-2xl bi bi-plus-circle-fill text-skyBlue md: mr-2 lg:mr-4"></i>
-                Ajouter un trajet
+                <span className="font-semibold md:mr-3 lg:mr-10 group">
+                <i className="text-2xl bi bi-plus-circle-fill text-skyBlue md:mr-2 lg:mr-4 group-hover:text-indigo-800"></i>
+                <span className="text-skyBlue group-hover:text-indigo-800">Ajouter un trajet</span>
                 </span>
-                <span className="text-skyBlue xs:block font-semibold hover:text-oceanBlue">
-                <i className="text-4xl bi bi-person-fill text-skyBlue md:mr-2 lg:mr-4"></i>
+                <span className=" font-semibold group">
+                <i className="text-4xl bi bi-person-fill text-skyBlue md:mr-2 lg:mr-4 group-hover:text-indigo-800"></i>
+                <i className="bi bi-chevron-up group-hover:text-indigo-800 text-skyBlue text-xl"></i>
                 </span>
             </div>
         </nav>
         <div>
-         {!mobileMenu? 
-            <div className="w-screen mt-20 md:hidden">
+            <div className={!mobileMenu ? "fixed top-20 max-h-[500px] w-screen md:hidden transition-all duration-700 overflow-hidden origin-top ease-in-out" : "z-30 fixed top-20 max-h-0 w-screen md:hidden transition-all duration-700 overflow-hidden origin-top ease-in-out"}>
                 <ul className="w-screen text-center">
                     <li className="bg-white pt-4 pb-3 font-medium text-skyBlue border-b-2">Acceuil</li>
                     <li className="bg-white pt-4 pb-3 font-medium text-skyBlue border-b-2">Covoiturages</li>
@@ -49,7 +50,7 @@ export default function NavBar(){
                     </li>
                     <li className="bg-skyBlue p-4 font-medium text-white border-b-2 hover:bg-indigo-800">
                         <i className="bi bi-plus-circle-fill text-white text-xl mr-3"></i>
-                        Ajouter trajet
+                        Ajouter un trajet
                     </li>
                     <li className="bg-skyBlue p-4 font-medium text-white border-b-2 hover:bg-indigo-800">
                         <i className="bi bi-person-fill text-white text-xl mr-3"></i>
@@ -57,8 +58,8 @@ export default function NavBar(){
                     </li>
                 </ul>
             </div> 
-            : <></>}
         </div>
+        <div className="w-screen bg-slate-600 mt-20">test</div>
     </>
     )
 }
