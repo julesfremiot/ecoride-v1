@@ -4,14 +4,14 @@ export default function LandingForm(){
     return (
         <>
             <div className="bg-green-400 pb-6 w-screen rounded-b-2xl shadow-md flex flex-col items-center justify-center">
-                <h3 className="text-white text-center font-bold text-3xl mt-12">Où vas-tu?</h3>
+                <p className="text-white text-center font-bold text-3xl mt-12">Où vas-tu?</p>
             <form className="w-11/12 bg-white rounded shadow-lg mt-4 p-8 flex flex-col">
                 <label htmlFor="ville-départ" className="text-gray-900 opacity-50 text-md mb-3">De:</label>
                 <input type="select" className="bg-green-100 rounded-full ps-6 py-2 !outline-none border-none form-input" placeholder="Paris"></input>
                 <label htmlFor="ville-départ" className="text-gray-900 opacity-50 text-md mb-3 mt-4">À:</label>
                 <input type="select" className="bg-green-100 rounded-full ps-6 py-2 !outline-none form-input border-none" placeholder="Bordeaux"></input>
                 <div className="mt-5">
-                    <h4 className="text-gray-700 text-lg">Date:</h4>
+                    <p className="text-gray-700 text-lg">Date:</p>
                     <ul className="mt-3">
                         <li className="inline text-green-400 font-medium mr-3">Aujourd'hui</li>
                         <li className="inline mr-3 text-gray-400">Demain</li>
