@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import './App.css'
 import NavBar from "./components/Navbar/NavBar"
-import LandingForm from "./components/Acceuil/LandingForm/LandingForm"
+import Acceuil from "./components/Acceuil/Acceuil"
 
 function App() {
 
   return (
     <>
     <NavBar />
-    <LandingForm />
+    <Acceuil />
     </>
   )
 }

@@ -1,18 +1,11 @@
-import "../../../components/componentscss/landingform.css"
-import landingIcon from '../../assets/landingpic.svg';
-import arrowIcon from '../../assets/arrowicon.svg';
+import "../componentscss/landingform.css"
 
 export default function LandingForm(){
     return (
         <>
-            <div className="bg-orange-900 rounded-b-2xl relative top-5 mt-[60px] flex flex-col items-center py-7 shadow-md w-screen landing-form-container">
-            <img src={landingIcon} alt="Landing icon" className="w-3/5 h-3/5 block" />
-            <h1 className="font-semibold text-white text-3xl mt-7">Trouve ton Ecoride!</h1>
-            <h2 className="font-medium text-white text-lg text-center mt-4 mb-2">Inscrit-toi et débloque<br></br> 1000+ trajets éco tout les jours.</h2>
-            </div>
             <div className="bg-green-400 pb-6 w-screen rounded-b-2xl shadow-md flex flex-col items-center justify-center">
-                <h3 className="text-white text-center font-medium text-3xl mt-12">Où vas-tu?</h3>
-            <form className="w-10/12 bg-white rounded shadow-lg mt-4 p-8 flex flex-col">
+                <h3 className="text-white text-center font-bold text-3xl mt-12">Où vas-tu?</h3>
+            <form className="w-11/12 bg-white rounded shadow-lg mt-4 p-8 flex flex-col">
                 <label htmlFor="ville-départ" className="text-gray-900 opacity-50 text-md mb-3">De:</label>
                 <input type="select" className="bg-green-100 rounded-full ps-6 py-2 !outline-none border-none form-input" placeholder="Paris"></input>
                 <label htmlFor="ville-départ" className="text-gray-900 opacity-50 text-md mb-3 mt-4">À:</label>

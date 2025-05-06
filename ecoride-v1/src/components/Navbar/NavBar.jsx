@@ -1,6 +1,7 @@
 import { useState } from "react"
 import "../componentscss/navbar.css";
 import MobileMenu from "./MobileMenu"
+import carIcon from "../assets/carfront.svg"
 
 export default function NavBar(){
 
@@ -11,12 +12,12 @@ export default function NavBar(){
     <nav className="z-20 h-20 w-screen fixed top-0 shadow-lg flex items-center justify-between xl:px-20 lg:px-10 md:px-5 bg-white ">
         <div className="flex px-10 w-screen items-center justify-between md:hidden">
             <div>
-                <span>Logo</span>
+            <span className="text-xl text-green-700 font-bold">Eco<span className="text-orange-700">ride</span></span>
             </div>
-            <i onClick={() => { openMenu(prevState => !prevState); }} className={mobileMenu ? "bi bi-list text-skyBlue font-bold text-3xl rounded px-1 block" : "bi bi-x text-skyBlue font-bold text-4xl rounded px-1 block"}></i>
+            <i onClick={() => { openMenu(prevState => !prevState); }} className={mobileMenu ? "bi bi-list text-green-500 font-bold text-3xl rounded px-1 block" : "bi bi-x text-green-500 font-bold text-4xl rounded px-1 block"}></i>
         </div>
         <div className="menu-wrapper hidden md:block">
-            <div className="logo inline xl:mr-20 lg:mr-10 md:mr-5">Logo</div>
+            <div className="logo inline xl:mr-20 lg:mr-10 md:mr-5">Ecoride</div>
             <ul className="inline">
                 <li className="inline-block xl:mr-16 lg:mr-7 md:mr-4 text-skyBlue hover:text-indigo-800 font-semibold"><a href="/">Acceuil</a></li>
                 <li className="inline-block xl:mr-16 lg:mr-7 md:mr-4 text-skyBlue hover:text-indigo-800 font-semibold"><a href="/">Covoiturages</a></li>
