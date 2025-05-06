@@ -12,3 +12,5 @@ html, body {
   height: 100%;
   overflow: auto;
 }
+
+.bi { vertical-align: 0.125em; }
