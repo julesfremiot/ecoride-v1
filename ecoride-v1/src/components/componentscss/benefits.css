@@ -3,3 +3,13 @@
     background-size: cover;
     background-position-x: 50%;
 }
+.benefits-pin-2 {
+    background-image: url("../assets/windturbine.svg");
+    background-size: cover;
+    background-position-x: 50%;
+}
+.benefits-pin-3 {
+    background-image: url("../assets/hattraveler.svg");
+    background-size: cover;
+    background-position-x: 50%;
+}
