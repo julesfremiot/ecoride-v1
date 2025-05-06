@@ -12,7 +12,7 @@ export default function LandingForm(){
             </div>
             <div className="bg-green-400 pb-6 w-screen rounded-b-2xl shadow-md flex flex-col items-center justify-center">
                 <h3 className="text-white text-center font-medium text-xl mt-14">Où vas-tu?</h3>
-            <form className="w-100 bg-white rounded shadow-lg mt-4 p-8 flex flex-col">
+            <form className="w-100 bg-white rounded shadow-lg mt-4 p-4 flex flex-col">
                 <label htmlFor="ville-départ" className="text-gray-900 opacity-50 text-md mb-3">De:</label>
                 <input type="select" className="bg-green-100 rounded-full ps-6 py-2 !outline-none border-none form-input" placeholder="Paris"></input>
                 <label htmlFor="ville-départ" className="text-gray-900 opacity-50 text-md mb-3 mt-4">À:</label>
