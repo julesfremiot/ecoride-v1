@@ -1,6 +1,7 @@
 import LandingSection1 from "./Landingsection1";
 import LandingForm from "./LandingForm";
 import Benefits from "./Benefits";
+import Voyages from "./Voyages";
 
 export default function Acceuil(){
     return (
@@ -8,6 +9,7 @@ export default function Acceuil(){
             <LandingSection1 />
             <LandingForm />
             <Benefits />
+            <Voyages />
         </>
     )
 }

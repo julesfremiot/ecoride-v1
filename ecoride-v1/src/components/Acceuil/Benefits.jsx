@@ -3,8 +3,8 @@ import "../componentscss/benefits.css"
 
 export default function Benefits(){
     return (
-        <div className="flex flex-col items-center justify-center mt-10">
-            <h2 className="text-4xl font-extrabold text-center p-2 text-green-500 mb-4">Pourquoi tu vas adorer Ecoride</h2>
+        <div className="flex flex-col items-center justify-center relative top-5 mt-4 rounded-b-2xl shadow-md pb-10 bg-white">
+            <h2 className="text-4xl font-extrabold text-center p-4 text-green-500 mb-4">Pourquoi tu vas adorer Ecoride</h2>
             <div className="text-center p-4 first-section">
                 <div className="h-32 w-32 rounded-full benefits-pin-1 inline-block mb-4 shadow-md"></div>
                 <h3 className="text-2xl font-bold inline-block"><span className="text-orange-500">Engagés</span><span className="text-gray-800"> envers la </span><span className="text-green-500">nature.</span></h3>

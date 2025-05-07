@@ -3,7 +3,7 @@ import "../componentscss/landingform.css"
 export default function LandingForm(){
     return (
         <>
-            <div className="bg-green-400 pb-6 w-screen rounded-b-2xl shadow-md flex flex-col items-center justify-center">
+            <div className="bg-green-400 pb-10 w-screen rounded-b-2xl shadow-md flex flex-col items-center justify-center">
                 <p className="text-white text-center font-bold text-3xl mt-12">Où vas-tu?</p>
             <form className="w-11/12 bg-white rounded shadow-lg mt-4 p-8 flex flex-col">
                 <label htmlFor="ville-départ" className="text-gray-900 opacity-50 text-md mb-3">De:</label>
