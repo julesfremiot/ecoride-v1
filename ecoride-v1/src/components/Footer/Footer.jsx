@@ -6,8 +6,8 @@ export default function Footer(){
 
 
     return (
-        <section className="bg-gray-900 flex justify-center flex-wrap p-6">
-            <div className="mt-12 text-center">
+        <section className="bg-gray-900 flex justify-center flex-wrap xl:gap-32 gap-12 px-6 pt-20">
+            <div className="w-[200px] text-center">
                 <h5 className="text-xl text-green-300 font-semibold mb-4">Utiliser Ecoride</h5>
                 <ul>
                     <a href="/"><li className="text-gray-100 leading-loose">Comment l'app fonctionne</li></a>
@@ -18,7 +18,7 @@ export default function Footer(){
                     <a href="/"><li className="text-gray-100 leading-loose">Abonnement</li></a>
                 </ul>
             </div>
-            <div className="mt-8 text-center">
+            <div className="w-[200px] text-center">
                 <h5 className="text-xl text-green-300 font-semibold mb-4">Notre entreprise</h5>
                 <ul>
                     <a href="/"><li className="text-gray-100 leading-loose">À propos</li></a>
@@ -30,7 +30,7 @@ export default function Footer(){
                     <a href="/"><li className="text-gray-100 leading-loose">Contact</li></a>
                 </ul>
             </div>
-            <div className="mt-8 text-center">
+            <div className="w-[200px] text-center">
                 <h5 className="text-xl text-green-300 font-semibold mb-4">Légal</h5>
                 <ul>
                     <a href="/"><li className="text-gray-100 leading-loose">Termes et conditions</li></a>
@@ -38,14 +38,14 @@ export default function Footer(){
                     <a href="/"><li className="text-gray-100 leading-loose">Mentions Légales</li></a>
                 </ul>
             </div>
-            <div className="mt-8 text-center">
-                <h5 className="text-xl text-green-300 font-semibold mb-4">Télecharge notre app</h5>
+            <div className="w-[200px] text-center">
+                <h5 className="text-xl text-green-300 font-semibold mb-4">Télécharge notre app</h5>
                 <ul>
                     <a href="/"><img src={appleIcon} alt="Apple icon" className="h-16 mx-auto mt-5" /></a>
                     <a href="/"><img src={googleIcon} alt="Google icon" className="h-16 mx-auto mt-5" /></a>
                 </ul>
             </div>
-            <div className="w-screen">
+            <div className="w-screen pb-8">
                     <div className="flex justify-center gap-5 mt-5">
                         <i class="bi bi-facebook text-white text-2xl"></i>
                         <i class="bi bi-instagram text-white text-2xl"></i>
